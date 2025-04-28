@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark-subtle">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 bg-light rounded-4 p-5 shadow-sm">
+          <h1 class="mb-4">Pet Registration</h1>
+          <form id="petForm">
+            <div class="mb-3">
+              <label for="petName" class="form-label">Pet Name</label>
+              <input type="text" class="form-control" id="petName" required />
+            </div>
+            <div class="mb-3">
+              <label for="ownerName" class="form-label">Owner Name</label>
+              <input type="text" class="form-control" id="ownerName" required />
+            </div>
+            <div class="mb-3">
+              <label for="species" class="form-label">Species</label>
+              <select class="form-select" id="species" required>
+                <option value="">Select Species</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Rabbit">Rabbit</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="breed" class="form-label">Breed</label>
+              <select class="form-select" id="breed" required>
+                <option value="">Select Breed</option>
+                <option value="Labrador">Labrador</option>
+                <option value="Persian">Persian</option>
+                <option value="Bunny">Bunny</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-75 d-block mx-auto btn-lg mt-5">Add Pet</button>
+          </form>
+          <h2 class="mt-5">Pets List</h2>
+          <ul id="petsList" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="first-exercise.js"></script>
+    <script src="second-exercise.js"></script>
+  </body>
+</html>
